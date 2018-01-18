@@ -8,12 +8,12 @@
  
 <script type="text/javascript" src="http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js"></script>
 <script type="text/javascript">
-    var prov_arr = new Array("\u4e2d\u56fd");//这里是需要屏蔽的省份数组
+    var prov_arr = new Array("\u4e2d\u56fd");//识别用户是否来自中国
     if (contains(prov_arr, remote_ip_info.country)) {
-        //在设定区域,不跳转
+        //在中国 不使用Google Site
         window.location.href = 'http://liuyaoyao.m2i.ac.cn';
     } else {
-        //不在设定区域,跳转到指定网站
+        //不在中国 使用Google Site
         window.location.href = 'https://sites.google.com/view/yaoyaoliu';
     }
     function contains(arr, obj) {
