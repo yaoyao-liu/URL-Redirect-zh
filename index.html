@@ -6,10 +6,10 @@
 
 <body> 
  
-<script type="text/javascript" src="http://ip.ws.126.net/ipquery"></script>
+<script type="text/javascript" src="http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js"></script>
 <script type="text/javascript">
-    var prov_arr = new Array("北京市","天津市","河北省","山西省","辽宁省","吉林省","黑龙江省","上海市","江苏省","浙江省","安徽省","福建省","江西省","山东省","河南省","湖北省","湖南省","广西省","广东省","海南省","重庆市","四川省","贵州省","云南省","陕西省","甘肃省","青海省");//这里是需要屏蔽的省份数组
-    if (contains(prov_arr, lo)) {
+    var prov_arr = new Array("\u4e2d\u56fd");//这里是需要屏蔽的省份数组
+    if (contains(prov_arr, remote_ip_info.country)) {
         //在设定区域,不跳转
         window.location.href = 'http://liuyaoyao.m2i.ac.cn';
     } else {
