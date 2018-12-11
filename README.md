@@ -13,3 +13,5 @@ TTL: 10 min
 Third, change the contents of the [CNAME](./CNAME) file in the repo to your domain.
 
 Fourth, replace the URL is the [index.html](./index.html) to whatever your want.
+
+There is also a Chinese version for this repo.
