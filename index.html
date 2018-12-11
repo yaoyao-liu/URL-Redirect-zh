@@ -4,28 +4,7 @@
 
 </head>
 
-<body> 
- 
-<script type="text/javascript" src="http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js"></script>
-<script type="text/javascript">
-    var prov_arr = new Array("\u4e2d\u56fd");//识别用户是否来自中国
-    if (contains(prov_arr, remote_ip_info.country)) {
-        //在中国 使用百度
-        window.location.href = 'https://www.baidu.com/';
-    } else {
-        //在海外 使用谷歌
-        window.location.href = 'https://www.google.com/';
-    }
-    function contains(arr, obj) {
-        var i = arr.length;
-        while (i--) {
-            if(obj.indexOf(arr[i]) > -1 ){
-                return true;
-            }
-        }
-        return false;
-    }
-</script>
+ <body onload="parent.location='https://yaoyaoliu.wixsite.com/home' "> 
 
 </body>
 
