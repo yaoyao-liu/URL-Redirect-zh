@@ -7,7 +7,7 @@ Second, add a CNAME record to your domain as follows:
 ```
 Host: whatever you want. e.g. "www"
 Target / Canonical name: your_username.github.io.
-TTL: 20 min
+TTL: 10 min
 ```
 
 Third, change the contents of the "CNAME" file in the repo to your domain.
