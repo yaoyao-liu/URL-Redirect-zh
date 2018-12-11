@@ -10,11 +10,11 @@
 <script type="text/javascript">
     var prov_arr = new Array("\u4e2d\u56fd");//识别用户是否来自中国
     if (contains(prov_arr, remote_ip_info.country)) {
-        //在中国 不使用Google Site
-        window.location.href = 'https://yaoyaoliu.wixsite.com/home';
+        //在中国 使用百度
+        window.location.href = 'https://www.baidu.com/';
     } else {
-        //不在中国 使用Google Site
-        window.location.href = 'https://yaoyaoliu.wixsite.com/home';
+        //在海外 使用谷歌
+        window.location.href = 'https://www.google.com/';
     }
     function contains(arr, obj) {
         var i = arr.length;
