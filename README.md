@@ -10,6 +10,6 @@ Target / Canonical name: your_username.github.io.
 TTL: 10 min
 ```
 
-Third, change the contents of the "CNAME" file in the repo to your domain.
+Third, change the contents of the [CNAME](./CNAME) file in the repo to your domain.
 
-Fourth, replace the URL is the "index.html" to whatever your want.
+Fourth, replace the URL is the [index.html](./index.html) to whatever your want.
