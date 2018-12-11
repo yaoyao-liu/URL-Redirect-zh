@@ -5,7 +5,7 @@
 
 第二步, 在你域名的dns中添加如下的CNAME记录:
 ```
-主机名: whatever you want. e.g. "www"
+主机名: 按你的需求设置，比如"www"
 记录值: your_username.github.io.
 TTL: 10 min
 ```
