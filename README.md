@@ -1,17 +1,17 @@
-# URL Redirect via GitHub
-Sometimes, you register a domain but you don't have a server. You may want this domain to redirect to your homepage/FB/IG or etc. However, most domain registrars do not provide this service, or this service charges. At this point, you can do url redirecting with the github page.
+# 通过Github实现URL转发
+有时，你注册了一个域名，但是你没有搭建服务器。你希望这个域名能指向你的主页/博客/微博等。但是，很多域名注册商不提供这种服务，或者这是一项收费服务。这时你可以使用GitHub来实现这一功能。
 
-First, create a new empty repo and import this repo to it.
+首先，创建一个空repo，并把这个repo导入其中。
 
-Second, add a CNAME record to your domain as follows:
+第二步, 在你域名的dns中添加如下的CNAME记录:
 ```
-Host: whatever you want. e.g. "www"
-Target / Canonical name: your_username.github.io.
+主机名: whatever you want. e.g. "www"
+记录值: your_username.github.io.
 TTL: 10 min
 ```
 
-Third, change the contents of the [CNAME](./CNAME) file in the repo to your domain.
+第三部，将[CNAME](./CNAME)文件的内容改为你的域名。
 
-Fourth, replace the URL is the [index.html](./index.html) to whatever your want.
+第四步， 在[index.html](./index.html)文件中，将URL改为你希望跳转的地址。
 
-There is also a Chinese version for this repo.
+这个repo也有[英文版本](https://github.com/y2l/URL-Redirect/)。
